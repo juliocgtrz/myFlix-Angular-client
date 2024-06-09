@@ -3,15 +3,21 @@ import { UserRegistrationFormComponent } from '../user-registration-form/user-re
 import { UserLoginFormComponent } from '../user-login-form/user-login-form.component';
 import { MatDialog } from '@angular/material/dialog';
 
+/** component for the welcome page */
 @Component({
   selector: 'app-welcome-page',
   templateUrl: './welcome-page.component.html',
   styleUrls: ['./welcome-page.component.scss']
 })
 export class WelcomePageComponent implements OnInit {
+  /**
+   * constructs the WelcomePageComponent
+   * @param dialog - the dialog service for opening the dialog
+   */
   constructor(public dialog: MatDialog
   ) { }
 
+  /** lifecycle hook called after component initialization */
   ngOnInit(): void {
   }
 
