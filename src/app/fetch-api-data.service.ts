@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { catchError } from 'rxjs/internal/operators';
+import { map, catchError } from 'rxjs/operators';
 
 // declaring the api url that will provide data for the client app
 const apiUrl = 'https://my-movies-flix-db-60666e043a4b.herokuapp.com/';
