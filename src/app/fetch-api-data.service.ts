@@ -13,6 +13,12 @@ export class FetchApiDataService {
   // this will provide HttpClient to the entire class, making it available via this.http
   constructor(private http: HttpClient) {
   }
+
+  private getToken(): string {
+    const user = localStorage.getItem('user');
+    return user ? JSON.parse(user).token : '';
+  }
+
   // making the api call for the user registration endpoint
   public userRegistration(userDetails: any): Observable<any> {
     console.log(userDetails);
