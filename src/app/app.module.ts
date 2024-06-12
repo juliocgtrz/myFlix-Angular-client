@@ -24,7 +24,6 @@ import { DirectorInfoComponent } from './director-info/director-info.component';
 import { GenreInfoComponent } from './genre-info/genre-info.component';
 import { MovieSynopsisComponent } from './movie-synopsis/movie-synopsis.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
@@ -62,9 +61,7 @@ const appRoutes: Routes = [
     MatIconModule,
     MatToolbarModule
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
