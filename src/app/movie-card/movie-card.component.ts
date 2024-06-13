@@ -19,6 +19,8 @@ export class MovieCardComponent implements OnInit {
   FavoriteMovies: any[] = [];
   isFavoriteMovie: boolean = false;
 
+  
+
   /**
    * construtor for MovieCardComponent
    * @param fetchApiData - service for fetching data from the API
