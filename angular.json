@@ -38,7 +38,7 @@
             ],
             "styles": ["src/styles.scss"],
             "scripts": [],
-            "baseHref": "/myFlix-Angular-app",
+            "baseHref": "/myFlix-Angular-app/",
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
