@@ -25,6 +25,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/",
+            "baseHref": "/angular-client/",
+            "deployUrl": "/angular-client/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -38,7 +40,6 @@
             ],
             "styles": ["src/styles.scss"],
             "scripts": [],
-            "baseHref": "/myFlix-Angular-app/",
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
